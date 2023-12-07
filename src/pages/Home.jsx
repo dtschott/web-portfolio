@@ -1,7 +1,11 @@
+import ContentSection from "../components/ContentSection";
+
 export default function HomePage() {
   return (
     <div>
-      <p>Home</p>
+      <ContentSection>
+        <p>Home</p>
+      </ContentSection>
     </div>
   );
 }
