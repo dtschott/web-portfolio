@@ -1,10 +1,11 @@
 // Navbar.jsx
 import React from "react";
-import Logo from "./Logo";
-import Socials from "./Socials";
-import Button from "./Button";
+import Logo from "../Logo/Logo";
+import Socials from "../Socials/Socials";
+import Button from "../Button/Button";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
-import Hamburger from "./Hamburger";
+import Hamburger from "../Hamburger/Hamburger";
+import "./navbar.css";
 
 export default function Navbar() {
   const navigate = useNavigate();

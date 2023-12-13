@@ -1,0 +1,33 @@
+.logo-row,
+.logo-responsive {
+  min-width: 175px;
+  max-width: 210px;
+}
+
+.logo-column {
+  min-width: 100px;
+  max-width: 125px;
+}
+
+.logo-clickable:hover {
+  cursor: pointer;
+}
+
+picture,
+img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .logo-responsive {
+    min-width: 60px;
+    max-width: 90px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-responsive {
+    min-width: 175px;
+    max-width: 210px;
+  }
+}

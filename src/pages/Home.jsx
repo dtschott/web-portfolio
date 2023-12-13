@@ -1,7 +1,7 @@
-import Button from "../components/Button";
-import InputField from "../components/InputField";
-import Logo from "../components/Logo";
-import Socials from "../components/Socials";
+import Button from "../components/Button/Button";
+import InputField from "../components/InputField/InputField";
+import Logo from "../components/Logo/Logo";
+import Socials from "../components/Socials/Socials";
 
 export default function HomePage() {
   return (

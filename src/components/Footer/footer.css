@@ -1,0 +1,42 @@
+/* MOBILE */
+
+.footer {
+  height: 360px;
+  border-top: 1px solid var(--light-gray);
+  background: linear-gradient(var(--blue), var(--navy));
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+}
+
+.footer-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+}
+
+/* TABLET */
+
+@media (min-width: 768px) {
+  .footer-top {
+    flex-direction: row;
+    gap: 2vw;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+}

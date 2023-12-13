@@ -1,7 +1,8 @@
-import RowLogo from "../assets/logos/Row.svg";
-import ColumnLogo from "../assets/logos/Column.svg";
-import RowLogoInverted from "../assets/logos/RowInverted.svg";
-import ColumnLogoInverted from "../assets/logos/ColumnInverted.svg";
+import RowLogo from "../../assets/logos/Row.svg";
+import ColumnLogo from "../../assets/logos/Column.svg";
+import RowLogoInverted from "../../assets/logos/RowInverted.svg";
+import ColumnLogoInverted from "../../assets/logos/ColumnInverted.svg";
+import "./logo.css";
 
 export default function Logo({ column, inverted, onClick, styles }) {
   const responsive = !column;

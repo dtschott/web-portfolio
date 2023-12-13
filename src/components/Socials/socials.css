@@ -1,0 +1,14 @@
+.indeed-social-icon {
+  width: 1.5rem;
+}
+
+.socials-container {
+  display: flex;
+  gap: 2vw;
+}
+
+@media (min-width: 768px) {
+  .indeed-social-icon {
+    width: 1.75rem;
+  }
+}

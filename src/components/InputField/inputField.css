@@ -1,0 +1,58 @@
+.input-field {
+  height: 2rem;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid var(--light-gray);
+  transition: all 0.25s;
+}
+
+.input-field::placeholder {
+  color: var(--light-gray);
+}
+
+textarea {
+  max-width: 80vw;
+  min-width: 10vw;
+  max-height: 50vh;
+  min-height: 3rem;
+}
+
+.input-field:hover {
+  border: 1px solid var(--gray);
+}
+
+.input-field:focus {
+  outline: 1px solid var(--gray);
+  border: 1px solid var(--gray);
+}
+
+.input-field.error {
+  border: 1px solid red;
+  color: red;
+}
+
+.input-field.error::placeholder {
+  color: red;
+}
+
+.input-field.error:hover {
+  border: 1px solid red;
+  outline: 1px solid red;
+}
+
+.input-error-msg {
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .input-field {
+    height: 2.25rem;
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  textarea {
+    max-width: 50vw;
+  }
+}

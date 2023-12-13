@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./hamburger.css";
 
 export default function Hamburger({ children }) {
   const [menuOpen, setMenuOpen] = useState(false);

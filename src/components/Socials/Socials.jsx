@@ -1,7 +1,8 @@
 import React from "react";
-import Button from "./Button";
-import IndeedWhite from "../assets/other/indeed_white.svg";
-import IndeedNavy from "../assets/other/indeed_navy.svg";
+import Button from "../Button/Button";
+import IndeedWhite from "../../assets/other/indeed_white.svg";
+import IndeedNavy from "../../assets/other/indeed_navy.svg";
+import "./socials.css";
 
 export default function Socials({ color, styles }) {
   let indeedLogo = IndeedWhite;
