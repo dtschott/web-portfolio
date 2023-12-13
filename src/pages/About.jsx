@@ -1,3 +1,9 @@
+import ContentSection from "../components/ContentSection";
+
 export default function AboutPage() {
-  return <p>About</p>;
+  return (
+    <ContentSection>
+      <p>About</p>
+    </ContentSection>
+  );
 }
