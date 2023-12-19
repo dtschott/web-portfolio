@@ -1,6 +1,6 @@
 .hamburger-menu {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .hamburger-container {
@@ -9,6 +9,7 @@
 
 .hamburger {
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .menu {
@@ -24,6 +25,7 @@
   height: 100vh;
   width: 100vw;
   background-color: var(--navy);
+  border-top: 1px solid var(--light-gray);
   transform: translate3d(100%, 0, 0);
   transition: transform 0.5s ease-in-out;
 }

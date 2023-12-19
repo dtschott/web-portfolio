@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./hamburger.css";
+import { toggleScroll } from "./../../utils.js";
 
 export default function Hamburger({ children }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    toggleScroll();
+    setMenuOpen((prevStatus) => !prevStatus);
   };
 
   return (

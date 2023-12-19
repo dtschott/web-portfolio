@@ -6,7 +6,7 @@
   background: linear-gradient(var(--blue), var(--navy));
   display: flex;
   flex-direction: column;
-  gap: 10vh;
+  gap: 5vh;
   justify-content: center;
   align-items: center;
 }
