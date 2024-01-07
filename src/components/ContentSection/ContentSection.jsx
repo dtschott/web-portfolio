@@ -1,3 +1,5 @@
+import "./content_section.css";
+
 export default function ContentSection({ children }) {
-  return <div>{children}</div>;
+  return <div className="content-section-container">{children}</div>;
 }

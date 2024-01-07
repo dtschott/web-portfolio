@@ -2,10 +2,30 @@ import Button from "../components/Button/Button";
 import InputField from "../components/InputField/InputField";
 import Logo from "../components/Logo/Logo";
 import Socials from "../components/Socials/Socials";
+import TextContent from "../components/TextContent/TextContent";
+import ContentSection from "../components/ContentSection/ContentSection";
+import PortraitImage from "./../assets/photos/Portrait_Image.png";
+import PortraitImageClose from "./../assets/photos/Portrait_Image_Close.png";
 
 export default function HomePage() {
   return (
     <>
+      <ContentSection>
+        <TextContent hero>
+          <Button
+            text="Let's Talk"
+            styles={{ fontSize: "1.25rem", height: "3rem" }}
+          />
+        </TextContent>
+        <picture>
+          <source
+            media="(min-width:768px)"
+            srcSet={PortraitImage}
+            className="portrait-img"
+          />
+          <img src={PortraitImageClose} className="portrait-img" />
+        </picture>
+      </ContentSection>
       <div>
         <h1>Buttons</h1>
         <Button
