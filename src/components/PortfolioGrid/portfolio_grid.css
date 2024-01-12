@@ -1,0 +1,23 @@
+#portfolio-grid {
+  margin-top: 30px;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  #portfolio-grid {
+    gap: 4%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #portfolio-grid {
+    padding: 0 12vw;
+  }
+
+  #portfolio-grid {
+    gap: 3%;
+  }
+}

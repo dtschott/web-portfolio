@@ -9,6 +9,8 @@ export default function InputField({
   error,
   onChange,
   styles,
+  containerClassName,
+  inputClassName,
 }) {
   const [errorMessage, setErrorMessage] = useState(error);
 
@@ -29,11 +31,13 @@ export default function InputField({
     onInput: (e) => handleEmailChange(e.target.value),
   };
 
-  const commonClassNames = `${errorMessage ? "error" : ""} input-field`;
+  const commonClassNames = `${errorMessage ? "error" : ""} ${
+    inputClassName ? inputClassName : ""
+  } input-field`;
 
   return (
     <>
-      <div className="input-field-container">
+      <div className={`input-field-container ${containerClassName}`}>
         {!textarea && <input {...commonProps} className={commonClassNames} />}
         {textarea && <textarea {...commonProps} className={commonClassNames} />}
       </div>

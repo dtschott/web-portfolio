@@ -8,6 +8,7 @@ export default function Button({
   brand,
   onClick,
   styles,
+  className,
   children,
 }) {
   let buttonType = "text";
@@ -21,7 +22,7 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={`button button-${color} ${buttonType}`}
+      className={`button button-${color} ${buttonType} ${className}`}
       style={styles}
     >
       <span className="button-content-container">
