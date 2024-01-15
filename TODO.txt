@@ -1,5 +1,14 @@
-Fix navbar spacing
+*Project Popup
 
-Contact Popup
+Project Component
 
-Project Popup
+Project Filtering
+
+---
+
+Contact Popup New
+- Need to set up server-side email forwarding to use input fields
+
+Test ContactPopup SMS link
+
+Fix Hamburger no-scoll (clashes with contact popup functionality)

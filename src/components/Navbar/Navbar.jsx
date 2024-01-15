@@ -1,13 +1,12 @@
 // Navbar.jsx
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../Logo/Logo";
 import Socials from "../Socials/Socials";
 import Button from "../Button/Button";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import Hamburger from "../Hamburger/Hamburger";
 import "./navbar.css";
-import "./../ContactPopup/ContactPopup";
-import ContactPopup from "./../ContactPopup/ContactPopup";
+import ContactPopup from "../ContactPopup/ContactPopup";
 
 export default function Navbar() {
   const [contactPopupOpen, setContactPopupOpen] = useState(false);
@@ -62,6 +61,7 @@ export default function Navbar() {
                 fontSize: "1.25rem",
                 fontWeight: "600",
               }}
+              onClick={handleContactClick}
             />
             <Socials color="white" />
             <ul>

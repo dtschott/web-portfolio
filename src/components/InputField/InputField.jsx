@@ -25,7 +25,7 @@ export default function InputField({
   }
 
   let commonProps = {
-    placeholder: required ? placeholder + "*" : placeholder,
+    placeholder: required ? placeholder + " *" : placeholder,
     type,
     style: styles,
     onInput: (e) => handleEmailChange(e.target.value),
