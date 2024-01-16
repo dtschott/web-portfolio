@@ -4,8 +4,8 @@ import Logo from "../components/Logo/Logo";
 import Socials from "../components/Socials/Socials";
 import TextContent from "../components/TextContent/TextContent";
 import ContentSection from "../components/ContentSection/ContentSection";
-import PortraitImage from "./../assets/photos/Portrait_Image.png";
-import PortraitImageClose from "./../assets/photos/Portrait_Image_Close.png";
+import PortraitImage from "/assets/photos/Portrait_Image.png";
+import PortraitImageClose from "/assets/photos/Portrait_Image_Close.png";
 
 export default function HomePage() {
   return (

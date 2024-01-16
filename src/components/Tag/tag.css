@@ -1,0 +1,14 @@
+.tag {
+  color: var(--navy);
+  border: 1px solid var(--gray);
+  border-radius: 3px;
+  text-align: center;
+  padding: 3px 6px;
+}
+
+@media (min-width: 768px) {
+  .tag {
+    font-size: 1.1rem;
+    padding: 5px 10px;
+  }
+}

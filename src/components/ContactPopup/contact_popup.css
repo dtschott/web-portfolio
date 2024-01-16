@@ -17,7 +17,7 @@
   z-index: 1;
 }
 
-.overlay {
+.contact-popup-container .overlay {
   position: fixed;
   top: 0;
   left: 0;

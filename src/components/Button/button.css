@@ -10,7 +10,7 @@
 .button {
   background-color: var(--cyan);
   color: white;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   border: none;
   border-radius: 0.2rem;
@@ -20,7 +20,7 @@
 
 button.text,
 button.text-icon {
-  padding: 0px 1.5rem;
+  padding: 0 1.25rem 0.05rem;
 }
 
 button.icon {
@@ -53,13 +53,13 @@ button.icon {
   }
 
   .button {
-    font-size: 1rem;
     height: 2.5rem;
   }
 
   button.text,
   button.text-icon {
-    padding: 0 2rem;
+    padding: 0 2rem 0.1rem;
+    font-size: 1.15rem;
   }
 
   button.icon {

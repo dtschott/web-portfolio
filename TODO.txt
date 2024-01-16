@@ -12,3 +12,5 @@ Contact Popup New
 Test ContactPopup SMS link
 
 Fix Hamburger no-scoll (clashes with contact popup functionality)
+
+Add image carousel to project popups
