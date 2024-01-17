@@ -5,12 +5,27 @@
   flex-direction: column;
   align-items: center;
   height: 900px;
-  border: 1px solid green;
+}
+
+.no-constraint {
+  height: auto;
 }
 
 .portrait-img {
   object-fit: contain;
   height: 450px;
+}
+
+.content-section-container.bg-gradient {
+  background: linear-gradient(
+    to bottom,
+    var(--navy) 0%,
+    var(--blue) 80%,
+    var(--blue) 100%
+  );
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
 }
 
 @media (min-width: 768px) {

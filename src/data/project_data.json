@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Rubicon Dog",
+    "shortDescription": "Full website build in Shopify",
+    "longDescription": "This is the long description for my Rubicon Dog project...",
+    "thumbnailImage": "Project_Img_Ex1.png",
+    "tags": ["Shopify", "CSS", "JavaScript"],
+    "url": "https://www.example.com",
+    "gitHub": "https://www.example.com",
+    "fileName": ""
+  },
+  {
+    "name": "Example 2",
+    "shortDescription": "Random made up project",
+    "longDescription": "This is the long description for my random made up project...",
+    "thumbnailImage": "Project_Img_Ex1.png",
+    "tags": ["Random Tag", "Responsive Design", "Nice"],
+    "url": "",
+    "gitHub": "",
+    "fileName": "Rock.png"
+  }
+]

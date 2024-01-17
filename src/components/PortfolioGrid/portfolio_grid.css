@@ -1,9 +1,10 @@
 #portfolio-grid {
   margin-top: 30px;
-  padding: 0 5vw;
+  padding: 0;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -13,10 +14,6 @@
 }
 
 @media (min-width: 1024px) {
-  #portfolio-grid {
-    padding: 0 12vw;
-  }
-
   #portfolio-grid {
     gap: 3%;
   }

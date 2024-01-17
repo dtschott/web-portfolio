@@ -10,7 +10,7 @@ import PortraitImageClose from "/assets/photos/Portrait_Image_Close.png";
 export default function HomePage() {
   return (
     <>
-      <ContentSection>
+      <ContentSection first>
         <TextContent hero>
           <Button
             text="Let's Talk"

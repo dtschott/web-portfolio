@@ -1,8 +1,10 @@
-*Project Popup
+Gather photo assets
 
-Project Component
+Organize content sections
 
-Project Filtering
+Arrange content sections layout
+
+Project filtering
 
 ---
 
@@ -11,6 +13,10 @@ Contact Popup New
 
 Test ContactPopup SMS link
 
-Fix Hamburger no-scoll (clashes with contact popup functionality)
+Fix Hamburger menu
+- No-scroll clashes with contact popup functionality
+- Doesn't show
+
+*Add navbar bottom border
 
 Add image carousel to project popups
