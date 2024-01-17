@@ -1,5 +1,5 @@
-import "./tag.css";
+import styles from "./tag.module.css";
 
 export default function Tag({ tagName }) {
-  return <div className="tag">{tagName}</div>;
+  return <div className={styles["tag"]}>{tagName}</div>;
 }

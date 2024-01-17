@@ -1,12 +1,46 @@
+1/17
+Project Repo 1
+*Resolve terrible CSS code (modules)
+Start work on hero section if you want
+
+1/18
+Hero section styling/responsiveness (try fully responsive height instead of solid px to maintain dimensions?)
+PhotoGroup style #1 for section 1
+Homepage section 1 (Project portfolio) content/styling/responsiveness
+
+1/19
+Project Repo 2
+Wrap up unfinished 1/18 work
+PhotoGroup style #2 for section 2
+Homepage section 1 (About me) content/styling/responsiveness
+
+1/20
+Weekly progress review
+Break from portfolio work; mess around with Repo 1 or 2 if bored
+Next week: keep working on home page and about page content, dive into project sorting when bored
+
+
+---
+
+
+SHORT TERM:
+
 Gather photo assets
-
-Organize content sections
-
-Arrange content sections layout
 
 Project filtering
 
+Add tags to project thumbnail displays
+
+Hamburger menu nav link styles
+- Should be buttons with white bg for tablet, mobile; transparent bg for desktop
+
+
 ---
+
+
+LONG TERM/RANDOM STUFF:
+
+Course List
 
 Contact Popup New
 - Need to set up server-side email forwarding to use input fields
@@ -14,9 +48,6 @@ Contact Popup New
 Test ContactPopup SMS link
 
 Fix Hamburger menu
-- No-scroll clashes with contact popup functionality
-- Doesn't show
-
-*Add navbar bottom border
+- Issue: scroll allowed when open; potentially clashes with contact popup body.no-scroll functionality
 
 Add image carousel to project popups

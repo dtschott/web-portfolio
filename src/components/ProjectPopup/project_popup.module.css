@@ -13,12 +13,12 @@
   transition: opacity 0.35s ease-in-out;
 }
 
-.project-popup-container.open {
+.open {
   opacity: 1;
   z-index: 1;
 }
 
-.project-popup-container .overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -28,7 +28,7 @@
   z-index: 0;
 }
 
-.project-popup-container .popup-content {
+.popup-content {
   max-height: 90vh;
   width: 80vw;
   overflow-y: scroll;
@@ -47,12 +47,12 @@
   padding: 20px 20px 35px;
 }
 
-.project-popup-container .popup-content::-webkit-scrollbar {
+.popup-content::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-.project-popup-container .close-button {
+.close-button {
   position: fixed;
   top: calc(5vh + 15px);
   right: calc(10vw + 15px);
@@ -62,28 +62,28 @@
   overflow: hidden;
 }
 
-.project-popup-container .popup-content h1 {
+.popup-content h1 {
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.project-popup-container .popup-content .link-buttons {
+.link-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.project-popup-container .popup-content .project-image {
+.project-image {
   border-radius: 5px;
 }
 
-.project-popup-container .popup-content .project-description {
+.project-description {
   margin-bottom: 10px;
   font-size: 0.9rem;
 }
 
-.project-popup-container .popup-content .tags {
+.tags {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -92,40 +92,40 @@
 }
 
 @media (min-width: 768px) {
-  .contact-popup-container .popup-content {
+  .popup-content {
     width: 500px;
     border-radius: 15px;
     padding: 25px 0 40px;
   }
 
-  .project-popup-container .close-button {
+  .close-button {
     right: 12vw;
   }
 
-  .project-popup-container .popup-content h1 {
+  .popup-content h1 {
     font-size: 2rem;
   }
 
-  .project-popup-container .popup-content .project-description {
+  .project-description {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .project-popup-container .popup-content {
+  .popup-content {
     width: 50vw;
     padding: 40px 40px 60px;
   }
 
-  .project-popup-container .popup-content .project-description {
+  .project-description {
     font-size: 1rem;
   }
 
-  .project-popup-container .popup-content em {
+  .popup-content em {
     font-size: 1.1rem;
   }
 
-  .project-popup-container .close-button {
+  .close-button {
     position: fixed;
     right: calc(25vw + 15px);
   }

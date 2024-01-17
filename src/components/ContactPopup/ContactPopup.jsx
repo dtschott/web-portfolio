@@ -1,7 +1,7 @@
-import "./contact_popup.css";
+import React, { useState, useEffect } from "react";
+import styles from "./contact_popup.module.css";
 import Button from "../Button/Button";
 import Socials from "../Socials/Socials";
-import { useState } from "react";
 
 const body = document.getElementsByTagName("body")[0];
 const isMobileDevice =
@@ -12,11 +12,17 @@ const isMobileDevice =
 export default function ContactPopup({ open, onClose }) {
   const [isSMSError, setIsSMSError] = useState(false);
 
-  if (open) {
-    body.classList.add("no-scroll");
-  } else {
-    body.classList.remove("no-scroll");
-  }
+  useEffect(() => {
+    if (open) {
+      body.classList.add(styles["no-scroll"]);
+    } else {
+      body.classList.remove(styles["no-scroll"]);
+    }
+
+    return () => {
+      body.classList.remove(styles["no-scroll"]);
+    };
+  }, [open]);
 
   function copyToClipboard() {
     navigator.clipboard.writeText("2533247247");
@@ -24,12 +30,16 @@ export default function ContactPopup({ open, onClose }) {
 
   return (
     <div>
-      <div className={`contact-popup-container ${open ? "open" : ""}`}>
-        <div className="overlay"></div>
-        <div className="popup-content">
+      <div
+        className={`${styles["contact-popup-container"]} ${
+          open ? styles.open : ""
+        }`}
+      >
+        <div className={styles.overlay}></div>
+        <div className={styles["popup-content"]}>
           <h1>Contact Me</h1>
           <h2>*Email or text preferred</h2>
-          <div className="contact-buttons">
+          <div className={styles["contact-buttons"]}>
             <Button
               icon="envelope"
               text="dtschott5@gmail.com"
@@ -51,14 +61,18 @@ export default function ContactPopup({ open, onClose }) {
               }}
               color="navy"
             />
-            <strong className={`error ${isSMSError ? "display-error" : ""}`}>
+            <strong
+              className={`${styles.error} ${
+                isSMSError ? styles["display-error"] : ""
+              }`}
+            >
               Copied phone number to clipboard.
             </strong>
             <Socials color="navy" />
           </div>
           <Button
             icon="x"
-            className="close-button"
+            className={styles["close-button"]}
             onClick={onClose}
             color="navy"
           />

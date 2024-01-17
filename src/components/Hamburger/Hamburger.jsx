@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./hamburger.css";
+import styles from "./hamburger.module.css";
 import { toggleScroll } from "./../../utils.js";
 
 export default function Hamburger({ children }) {
@@ -11,9 +11,18 @@ export default function Hamburger({ children }) {
   };
 
   return (
-    <div className="hamburger-container">
-      <i className="fa-solid fa-bars hamburger" onClick={toggleMenu}></i>
-      <div className={`menu ${menuOpen ? "open" : "closed"}`}>{children}</div>
+    <div className={styles["hamburger-menu"]}>
+      <div className={styles["hamburger-container"]}>
+        <i
+          className={`fa-solid fa-bars ${styles.hamburger}`}
+          onClick={toggleMenu}
+        ></i>
+        <div
+          className={`${styles.menu} ${menuOpen ? styles.open : styles.closed}`}
+        >
+          {children}
+        </div>
+      </div>
     </div>
   );
 }

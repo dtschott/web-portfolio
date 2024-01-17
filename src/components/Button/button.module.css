@@ -18,12 +18,12 @@
   transition: all 0.25s;
 }
 
-button.text,
-button.text-icon {
+.text,
+.text-icon {
   padding: 0 1.25rem 0.05rem;
 }
 
-button.icon {
+.icon {
   width: 2.5rem;
   height: 2.5rem;
   font-size: 1.5rem;
@@ -40,9 +40,14 @@ button.icon {
   color: white;
 }
 
-.button-white {
+.button-white,
+.footer {
   background-color: white;
   color: var(--navy);
+}
+
+.footer {
+  width: 250px;
 }
 
 /* TABLET */
@@ -56,15 +61,26 @@ button.icon {
     height: 2.5rem;
   }
 
-  button.text,
-  button.text-icon {
+  .text,
+  .text-icon {
     padding: 0 2rem 0.1rem;
     font-size: 1.15rem;
   }
 
-  button.icon {
+  .icon {
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    background-color: transparent;
+    color: white;
+  }
+
+  .footer:hover {
+    box-shadow: none;
   }
 }

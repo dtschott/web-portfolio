@@ -1,21 +1,24 @@
-import "./project_popup.css";
+import React, { useEffect } from "react";
 import Button from "../Button/Button";
 import Tag from "../Tag/Tag";
+import styles from "./project_popup.module.css";
 
 const body = document.getElementsByTagName("body")[0];
 
 export default function ProjectPopup({ projectData, open, onClose }) {
+  useEffect(() => {
+    if (open) {
+      body.classList.add("no-scroll");
+    } else {
+      body.classList.remove("no-scroll");
+    }
+  }, [open]);
+
   let fileLocation = "";
   if (projectData) {
     fileLocation = projectData.fileName
-      ? "/assets/project_files/" + projectData.fileName
+      ? `/assets/project_files/${projectData.fileName}`
       : "";
-  }
-
-  if (open) {
-    body.classList.add("no-scroll");
-  } else {
-    body.classList.remove("no-scroll");
   }
 
   function download(fileLocation) {
@@ -30,27 +33,35 @@ export default function ProjectPopup({ projectData, open, onClose }) {
   if (projectData)
     return (
       <div>
-        <div className={`project-popup-container ${open ? "open" : ""}`}>
-          <div className="overlay"></div>
-          <div className="popup-content">
-            <img src={projectData.thumbnailImage} className="project-image" />
+        <div
+          className={`${styles["project-popup-container"]} ${
+            open ? styles.open : ""
+          }`}
+        >
+          <div className={styles.overlay}></div>
+          <div className={styles["popup-content"]}>
+            <img
+              src={projectData.thumbnailImage}
+              className={styles["project-image"]}
+              alt="Project"
+            />
             <h1>{projectData.name}</h1>
-            <div className="project-description">
+            <div className={styles["project-description"]}>
               {projectData.longDescription}
             </div>
             <Button
               icon="x"
-              className="close-button"
+              className={styles["close-button"]}
               onClick={onClose}
               color="navy"
             />
             <em>Primary technologies/languages:</em>
-            <div className="tags">
+            <div className={styles.tags}>
               {projectData.tags.map((tagName) => (
                 <Tag tagName={tagName} key={tagName} />
               ))}
             </div>
-            <div className="link-buttons">
+            <div className={styles["link-buttons"]}>
               {projectData.url && (
                 <Button
                   text="Website"
@@ -81,4 +92,6 @@ export default function ProjectPopup({ projectData, open, onClose }) {
         </div>
       </div>
     );
+
+  return null;
 }

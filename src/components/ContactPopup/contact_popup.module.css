@@ -17,7 +17,7 @@
   z-index: 1;
 }
 
-.contact-popup-container .overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +27,7 @@
   z-index: 0;
 }
 
-.contact-popup-container .popup-content {
+.popup-content {
   width: 320px;
   position: absolute;
   display: flex;
@@ -41,7 +41,7 @@
   padding: 15px 20px 35px;
 }
 
-.contact-popup-container .close-button {
+.close-button {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -51,52 +51,52 @@
   overflow: hidden;
 }
 
-.contact-popup-container .popup-content h1 {
+.popup-content h1 {
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.contact-popup-container .popup-content h2 {
+.popup-content h2 {
   font-size: 1rem;
   color: var(--gray);
   margin: 10px 0 30px 0;
 }
 
-.popup-content .contact-buttons {
+.contact-buttons {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
 }
 
-.contact-buttons .error {
+.error {
   display: none;
   font-size: 1rem;
   color: var(--navy);
   text-align: center;
 }
 
-.contact-buttons .error.display-error {
+.error.display-error {
   display: inline;
 }
 
 @media (min-width: 768px) {
-  .contact-popup-container .popup-content {
+  .popup-content {
     width: 500px;
     border-radius: 15px;
     padding: 25px 0 40px;
   }
 
-  .contact-popup-container .close-button {
+  .close-button {
     top: 15px;
     right: 15px;
   }
 
-  .contact-popup-container .popup-content h1 {
+  .popup-content h1 {
     font-size: 2rem;
   }
 
-  .contact-popup-container .popup-content h2 {
+  .popup-content h2 {
     font-size: 1.1rem;
     margin-top: 15px;
   }

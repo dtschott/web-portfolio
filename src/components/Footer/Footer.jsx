@@ -1,7 +1,9 @@
+// Footer.jsx
+import React from "react";
 import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
 import Socials from "../Socials/Socials";
-import "./footer.css";
+import styles from "./footer.module.css";
 
 export default function Footer() {
   function handleEmailClick() {
@@ -13,22 +15,22 @@ export default function Footer() {
   }
 
   return (
-    <div className="footer">
+    <div className={styles.footer}>
       <div>
-        <div className="footer-top">
+        <div className={styles["footer-top"]}>
           <Logo inverted column />
-          <div className="footer-buttons">
+          <div className={styles["footer-buttons"]}>
             <Button
               text="dtschott5@gmail.com"
               icon="envelope"
-              styles={{ backgroundColor: "transparent", boxShadow: "none" }}
               onClick={handleEmailClick}
+              footer
             />
             <Button
               text="Fircrest, WA 98466"
               icon="location-dot"
-              styles={{ backgroundColor: "transparent", boxShadow: "none" }}
               onClick={handleLocationClick}
+              footer
             />
           </div>
         </div>

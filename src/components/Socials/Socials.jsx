@@ -2,9 +2,9 @@ import React from "react";
 import Button from "../Button/Button";
 import IndeedWhite from "/assets/other/indeed_white.svg";
 import IndeedNavy from "/assets/other/indeed_navy.svg";
-import "./socials.css";
+import styles from "./socials.module.css";
 
-export default function Socials({ color, styles }) {
+export default function Socials({ color, styles: customStyles }) {
   let indeedLogo = IndeedWhite;
   if (color === "white") {
     indeedLogo = IndeedNavy;
@@ -21,12 +21,15 @@ export default function Socials({ color, styles }) {
         break;
       case "indeed":
         url = "https://profile.indeed.com/p/daniels-5w0krqg";
+        break;
+      default:
+        break;
     }
     window.open(url, "_blank");
   }
 
   return (
-    <div className="socials-container" style={styles}>
+    <div className={styles["socials-container"]} style={customStyles}>
       <Button
         brand
         icon="github"
@@ -40,7 +43,11 @@ export default function Socials({ color, styles }) {
         color={color}
       />
       <Button onClick={() => handleIconClick("indeed")} color={color}>
-        <img src={indeedLogo} className="indeed-social-icon" />
+        <img
+          src={indeedLogo}
+          className={styles["indeed-social-icon"]}
+          alt="Indeed Logo"
+        />
       </Button>
     </div>
   );

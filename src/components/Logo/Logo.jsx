@@ -1,10 +1,16 @@
+import React from "react";
 import RowLogo from "/assets/logos/Row.svg";
 import ColumnLogo from "/assets/logos/Column.svg";
 import RowLogoInverted from "/assets/logos/RowInverted.svg";
 import ColumnLogoInverted from "/assets/logos/ColumnInverted.svg";
-import "./logo.css";
+import styles from "./logo.module.css";
 
-export default function Logo({ column, inverted, onClick, styles }) {
+export default function Logo({
+  column,
+  inverted,
+  onClick,
+  styles: customStyles,
+}) {
   const responsive = !column;
 
   const logo = column
@@ -15,14 +21,13 @@ export default function Logo({ column, inverted, onClick, styles }) {
     ? RowLogoInverted
     : RowLogo;
 
-  let containerClass = column ? "logo-column" : "logo-row";
+  let containerClass = column ? styles["logo-column"] : styles["logo-row"];
 
-  containerClass += onClick ? " logo-clickable" : "";
-
-  containerClass += responsive ? " logo-responsive" : "";
+  containerClass += onClick ? ` ${styles["logo-clickable"]}` : "";
+  containerClass += responsive ? ` ${styles["logo-responsive"]}` : "";
 
   return (
-    <div className={containerClass} {...styles} onClick={onClick}>
+    <div className={containerClass} style={customStyles} onClick={onClick}>
       {responsive && !inverted && (
         <picture>
           <source
@@ -41,7 +46,7 @@ export default function Logo({ column, inverted, onClick, styles }) {
           <img src={RowLogoInverted} alt="Logo" />
         </picture>
       )}
-      {!responsive && <img src={logo}></img>}
+      {!responsive && <img src={logo} alt="Logo" />}
     </div>
   );
 }

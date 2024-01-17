@@ -1,13 +1,15 @@
-import "./content_section.css";
+import styles from "./content_section.module.css";
 
-export default function ContentSection({ children, first, noConstraint }) {
+const ContentSection = ({ children, first, noConstraint }) => {
   return (
     <div
-      className={`content-section-container ${first ? "bg-gradient" : ""} ${
-        noConstraint ? "no-constraint" : ""
-      }`}
+      className={`${styles["content-section-container"]} ${
+        first ? styles["bg-gradient"] : ""
+      } ${noConstraint ? styles["no-constraint"] : ""}`}
     >
       {children}
     </div>
   );
-}
+};
+
+export default ContentSection;

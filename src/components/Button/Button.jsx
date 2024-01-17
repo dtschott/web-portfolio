@@ -1,4 +1,4 @@
-import "./button.css";
+import styles from "./button.module.css";
 
 export default function Button({
   text,
@@ -7,8 +7,9 @@ export default function Button({
   color = "cyan",
   brand,
   onClick,
-  styles,
+  styles: customStyles,
   className,
+  footer,
   children,
 }) {
   let buttonType = "text";
@@ -22,10 +23,12 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={`button button-${color} ${buttonType} ${className}`}
-      style={styles}
+      className={`${styles.button} ${styles[`button-${color}`]} ${
+        styles[buttonType]
+      } ${footer ? styles["footer"] : ""} ${className}`}
+      style={customStyles}
     >
-      <span className="button-content-container">
+      <span className={styles["button-content-container"]}>
         {!children && !iconAfter && icon && (
           <span>
             <i className={`${brand ? "fa-brands" : "fa-solid"} fa-${icon}`}></i>

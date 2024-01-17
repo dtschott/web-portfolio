@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./inputField.css";
+import styles from "./inputField.module.css";
 
 export default function InputField({
   placeholder,
@@ -8,7 +8,7 @@ export default function InputField({
   textarea,
   error,
   onChange,
-  styles,
+  styles: customStyles,
   containerClassName,
   inputClassName,
 }) {
@@ -19,29 +19,33 @@ export default function InputField({
     setErrorMessage(error);
   }, [error]);
 
-  function handleEmailChange(newEmail) {
+  function handleInputChange(newValue) {
     setErrorMessage("");
-    onChange(newEmail);
+    onChange(newValue);
   }
 
   let commonProps = {
-    placeholder: required ? placeholder + " *" : placeholder,
+    placeholder: required ? `${placeholder} *` : placeholder,
     type,
-    style: styles,
-    onInput: (e) => handleEmailChange(e.target.value),
+    style: customStyles,
+    onInput: (e) => handleInputChange(e.target.value),
   };
 
-  const commonClassNames = `${errorMessage ? "error" : ""} ${
+  const commonClassNames = `${errorMessage ? styles.error : ""} ${
     inputClassName ? inputClassName : ""
-  } input-field`;
+  } ${styles["input-field"]}`;
 
   return (
     <>
-      <div className={`input-field-container ${containerClassName}`}>
+      <div
+        className={`${styles["input-field-container"]} ${containerClassName}`}
+      >
         {!textarea && <input {...commonProps} className={commonClassNames} />}
         {textarea && <textarea {...commonProps} className={commonClassNames} />}
       </div>
-      {errorMessage && <div className="input-error-msg">{errorMessage}</div>}
+      {errorMessage && (
+        <div className={styles["input-error-msg"]}>{errorMessage}</div>
+      )}
     </>
   );
 }

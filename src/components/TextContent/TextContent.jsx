@@ -1,8 +1,8 @@
-import "./text_content.css";
+import styles from "./text_content.module.css";
 
 export default function TextContent({ hero, header, body, children }) {
   return (
-    <div className="text-content-container">
+    <div className={styles["text-content-container"]}>
       {hero ? (
         <>
           <h2>Hello! I&apos;m</h2>
@@ -19,7 +19,7 @@ export default function TextContent({ hero, header, body, children }) {
           <div>{body}</div>
         </>
       )}
-      <div className="children">{children}</div>
+      <div className={styles["children"]}>{children}</div>
     </div>
   );
 }

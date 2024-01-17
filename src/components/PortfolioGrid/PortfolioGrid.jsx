@@ -1,8 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Project from "../Project/Project";
 import ProjectPopup from "../ProjectPopup/ProjectPopup";
-import projectData from "../../../src/data/project_data.json";
-import "./portfolio_grid.css";
+import projectData from "../../data/project_data.json";
+import styles from "./portfolio_grid.module.css";
 
 const noPopup = <ProjectPopup open={false} />;
 
@@ -21,7 +21,7 @@ export default function PortfolioGrid() {
 
   return (
     <>
-      <div id="portfolio-grid">
+      <div id={styles["portfolio-grid"]}>
         {projectData.map((project, index) => (
           <Project
             key={index}

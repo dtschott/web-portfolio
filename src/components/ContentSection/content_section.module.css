@@ -11,11 +11,6 @@
   height: auto;
 }
 
-.portrait-img {
-  object-fit: contain;
-  height: 450px;
-}
-
 .content-section-container.bg-gradient {
   background: linear-gradient(
     to bottom,
@@ -31,14 +26,6 @@
 @media (min-width: 768px) {
   .content-section-container {
     flex-direction: row;
-  }
-
-  .portrait-img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 60%;
-    height: 80%;
   }
 }
 

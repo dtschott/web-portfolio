@@ -31,9 +31,21 @@ body {
 
 /* MOBILE */
 
+.portrait-img {
+  object-fit: contain;
+  height: 450px;
+}
+
 /* TABLET */
 
 @media (min-width: 768px) {
+  .portrait-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    height: 80%;
+  }
 }
 
 /* DESKTOP */
