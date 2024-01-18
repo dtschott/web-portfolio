@@ -1,7 +1,5 @@
 1/17
-Project Repo 1
-*Resolve terrible CSS code (modules)
-Start work on hero section if you want
+*Start work on hero section if you want
 
 1/18
 Hero section styling/responsiveness (try fully responsive height instead of solid px to maintain dimensions?)

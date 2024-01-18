@@ -1,0 +1,91 @@
+/* For next time, portrait image container has vertical margin for some reason */
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 5vh 5vw 0;
+  background: linear-gradient(
+    to bottom,
+    var(--navy) 0%,
+    var(--blue) 80%,
+    var(--blue) 100%
+  );
+}
+
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin: 0;
+}
+
+.hero-container h1 {
+  font-size: max(8vw, 2rem);
+  margin: 0 0 3vh 0;
+}
+
+.hero-container h2 {
+  font-size: max(5vw, 1.25rem);
+  margin: 0;
+}
+
+.hero-container div {
+  font-size: max(2.5vw, 0.95rem);
+  margin-bottom: 5vh;
+}
+
+:global .hero-cta {
+  font-size: 1.15rem;
+  width: 150px;
+  height: 2.75rem;
+  margin: 0;
+}
+
+.portrait-img-container {
+  margin: 0 auto;
+}
+
+.portrait-img {
+  width: max(60vw, 275px);
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hero-header {
+    align-items: start;
+    justify-content: center;
+  }
+
+  .hero-container h2 {
+    font-size: max(3vw, 1rem);
+  }
+
+  .hero-container h1 {
+    font-size: max(5vw, 1.5rem);
+  }
+
+  .hero-container div {
+    font-size: max(1.5vw, 1.15rem);
+  }
+
+  :global .hero-cta {
+    font-size: 1.15rem;
+    width: 175px;
+    height: 3rem;
+  }
+
+  .portrait-img {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    padding: 10vh 12vw 0;
+  }
+}
