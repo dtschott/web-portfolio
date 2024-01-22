@@ -1,12 +1,8 @@
 import styles from "./content_section.module.css";
 
-const ContentSection = ({ children, first, noConstraint }) => {
+const ContentSection = ({ children, colorStyle }) => {
   return (
-    <div
-      className={`${styles["content-section-container"]} ${
-        first ? styles["bg-gradient"] : ""
-      } ${noConstraint ? styles["no-constraint"] : ""}`}
-    >
+    <div className={`${styles["content-section"]} ${styles[colorStyle]}`}>
       {children}
     </div>
   );

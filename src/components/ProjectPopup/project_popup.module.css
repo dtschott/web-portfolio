@@ -63,7 +63,7 @@
 }
 
 .popup-content h1 {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   margin-bottom: 0;
 }
 
@@ -114,7 +114,7 @@
 @media (min-width: 1024px) {
   .popup-content {
     width: 50vw;
-    padding: 30px 30px 45px;
+    padding: 40px 40px 60px;
   }
 
   .project-description {
@@ -127,5 +127,16 @@
 
   .close-button {
     right: calc(25vw + 15px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .popup-content {
+    width: 40vw;
+    padding: 50px 50px 70px;
+  }
+
+  .close-button {
+    right: calc(30vw + 15px);
   }
 }

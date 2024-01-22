@@ -114,3 +114,9 @@
     width: min(40vw, 400px);
   }
 }
+
+@media (min-width: 1600px) {
+  .hero-container {
+    padding: 0 18vw;
+  }
+}

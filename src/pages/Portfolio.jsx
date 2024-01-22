@@ -4,9 +4,7 @@ import PortfolioGrid from "../components/PortfolioGrid/PortfolioGrid";
 export default function PortfolioPage() {
   return (
     <>
-      <ContentSection first noConstraint>
-        <PortfolioGrid />
-      </ContentSection>
+      <PortfolioGrid />
     </>
   );
 }

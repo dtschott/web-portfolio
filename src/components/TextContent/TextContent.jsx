@@ -1,6 +1,12 @@
 import styles from "./text_content.module.css";
 
-export default function TextContent({ hero, header, body, children }) {
+export default function TextContent({
+  hero,
+  header,
+  body,
+  children,
+  colorStyle,
+}) {
   return (
     <div className={styles["text-content-container"]}>
       {hero ? (
@@ -14,10 +20,10 @@ export default function TextContent({ hero, header, body, children }) {
           </div>
         </>
       ) : (
-        <>
-          <h2>{header}</h2>
-          <div>{body}</div>
-        </>
+        <div>
+          <h2 className={styles[colorStyle]}>{header}</h2>
+          <span className={styles[colorStyle]}>{body}</span>
+        </div>
       )}
       <div className={styles["children"]}>{children}</div>
     </div>

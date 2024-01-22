@@ -30,6 +30,10 @@
 /* TABLET */
 
 @media (min-width: 768px) {
+  .footer {
+    gap: 6vh;
+  }
+
   .footer-top {
     flex-direction: row;
     gap: 4vw;
@@ -40,9 +44,9 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .footer-top {
     flex-direction: row;
-    gap: 4vw;
+    gap: 2vw;
   }
 }

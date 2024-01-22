@@ -30,6 +30,22 @@
   margin-top: 3vh;
 }
 
+h2.light {
+  color: var(--gray);
+}
+
+h2.dark {
+  color: var(--offwhite);
+}
+
+span.light {
+  color: var(--navy);
+}
+
+span.dark {
+  color: var(--offwhite);
+}
+
 @media (min-width: 768px) {
   .text-content-container {
     justify-content: center;

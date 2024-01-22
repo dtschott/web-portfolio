@@ -1,22 +1,5 @@
-1/17
-*Start work on hero section if you want
-
-1/18
-Hero section styling/responsiveness (try fully responsive height instead of solid px to maintain dimensions?)
-PhotoGroup style #1 for section 1
-Homepage section 1 (Project portfolio) content/styling/responsiveness
-
-1/19
-Project Repo 2
-Wrap up unfinished 1/18 work
-PhotoGroup style #2 for section 2
-Homepage section 1 (About me) content/styling/responsiveness
-
-1/20
-Weekly progress review
-Break from portfolio work; mess around with Repo 1 or 2 if bored
-Next week: keep working on home page and about page content, dive into project sorting when bored
-
+1/22
+Landing page section 1 (about)
 
 ---
 

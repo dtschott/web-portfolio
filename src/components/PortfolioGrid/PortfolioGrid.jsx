@@ -21,7 +21,7 @@ export default function PortfolioGrid() {
 
   return (
     <>
-      <div id={styles["portfolio-grid"]}>
+      <div className={styles["portfolio-grid"]}>
         {projectData.map((project, index) => (
           <Project
             key={index}
