@@ -5,7 +5,7 @@
   /* cyan: #00C6C7 */
   --cyan: #31a0d5;
   --offwhite: #f6fcfc;
-  --gray: #292a2e;
+  --gray: #3b3b3b;
   --light-gray: #a4acb2;
   --blue: #0b253c;
 }
@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background: var(--blue);
+  background: var(--navy);
   background-size: cover;
   color: white;
 }

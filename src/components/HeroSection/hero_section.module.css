@@ -34,8 +34,14 @@
   margin-bottom: 0vh;
 }
 
+:global picture {
+  position: relative;
+  top: 5px;
+}
+
 .portrait-img-container {
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .portrait-img {

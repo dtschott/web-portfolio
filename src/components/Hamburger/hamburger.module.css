@@ -33,10 +33,12 @@
 
 .menu.closed {
   transform: translate3d(100vw, 0, 0);
+  opacity: 0;
 }
 
 .menu.open {
   transform: translate3d(0vw, 0, 0);
+  opacity: 1;
 }
 
 .menu ul {

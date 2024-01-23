@@ -1,10 +1,15 @@
 .content-section {
   position: relative;
-  padding: 20vh 5vw;
+  padding: 7.5vw 5vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  gap: 3vh;
   align-items: center;
   margin: 0;
+}
+
+.content-section.inverted {
+  flex-direction: row-reverse;
 }
 
 .content-section.light {
@@ -30,17 +35,18 @@
 @media (min-width: 768px) {
   .content-section {
     flex-direction: row;
+    gap: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .content-section {
-    padding: 20vh 12vw;
+    padding: 5vh 12vw;
   }
 }
 
 @media (min-width: 1600px) {
   .content-section {
-    padding: 20vh 18vw;
+    padding: 5vh 18vw;
   }
 }

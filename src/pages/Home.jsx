@@ -8,20 +8,32 @@ export default function HomePage() {
     <>
       <HeroSection />
       <ContentSection colorStyle="light">
-        <PhotoGallery />
+        <PhotoGallery
+          photos={[
+            "task-tracker-kanban_thumbnail.png",
+            "rubicon-dog_thumbnail.png",
+            "investment-calculator_thumbnail.png",
+          ]}
+        />
         <TextContent
           header="About Me"
-          body="I live in Tacoma, WA.  live in Tacoma, WA.  live in Tacoma, WA. "
+          body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, quis aliquet nisl nunc quis nisl. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, quis aliquet nisl nunc quis nisl."
           colorStyle="light"
         />
       </ContentSection>
       <ContentSection colorStyle="dark">
+        <PhotoGallery
+          photos={[
+            "task-tracker-kanban_thumbnail.png",
+            "rubicon-dog_thumbnail.png",
+            "investment-calculator_thumbnail.png",
+          ]}
+        />
         <TextContent
-          header="About Me"
-          body="I live in Tacoma, WA.  live in Tacoma, WA.  live in Tacoma, WA. "
+          header="My Work"
+          body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, quis aliquet nisl nunc quis nisl. Nulla euismod, nisl eget ultricies aliquam, nunc nisl ultricies nunc, quis aliquet nisl nunc quis nisl."
           colorStyle="dark"
         />
-        <div></div>
       </ContentSection>
     </>
   );
