@@ -4,7 +4,7 @@ export default function Button({
   text,
   icon,
   iconAfter = false,
-  color = "cyan",
+  color,
   brand,
   onClick,
   styles: customStyles,
@@ -23,9 +23,9 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={`${styles.button} ${styles[`button-${color}`]} ${
-        styles[buttonType]
-      } ${footer ? styles["footer"] : ""} ${className}`}
+      className={`${styles["button"]} ${
+        color ? styles[`button-${color}`] : ""
+      } ${styles[buttonType]} ${footer ? styles["footer"] : ""} ${className}`}
       style={customStyles}
     >
       <span className={styles["button-content-container"]}>

@@ -15,7 +15,7 @@ export default function HeroSection() {
   return (
     <div className={styles["hero-container"]}>
       <div className={styles["hero-header"]}>
-        <h2>Hello, I&apos;m</h2>
+        <h2>Hello! I&apos;m</h2>
         <h1>Daniel Schott</h1>
         <div className={styles["description"]}>
           I&apos;m a freelance web designer/developer who loves a challenge. I
@@ -26,7 +26,7 @@ export default function HeroSection() {
           text="My Work"
           icon="arrow-right"
           iconAfter
-          className="hero-cta"
+          className={styles["hero-cta"]}
           onClick={handleNavigatePortfolio}
         />
       </div>

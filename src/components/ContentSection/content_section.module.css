@@ -1,3 +1,11 @@
+:global .content-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0;
+}
+
 .content-section {
   position: relative;
   padding: 7.5vw 5vw;
@@ -33,6 +41,11 @@
 }
 
 @media (min-width: 768px) {
+  :global .content-button-container {
+    gap: 1rem;
+    justify-content: start;
+  }
+
   .content-section {
     flex-direction: row;
     gap: 0;
