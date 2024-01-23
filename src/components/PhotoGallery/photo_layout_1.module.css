@@ -1,0 +1,122 @@
+.photo-2 {
+  top: -65px;
+  left: 5vw;
+}
+
+.photo-2.inverted {
+  left: auto;
+  right: 5vw;
+}
+
+.photo-3 {
+  top: -125px;
+}
+
+@media (min-width: 500px) {
+  .photo-1 {
+    left: -5vw;
+  }
+
+  .photo-1.inverted {
+    left: auto;
+    right: -5vw;
+  }
+
+  .photo-2 {
+    top: -100px;
+    left: 7.5vw;
+  }
+
+  .photo-2.inverted {
+    left: auto;
+    right: 7.5vw;
+  }
+
+  .photo-3 {
+    top: -175px;
+  }
+}
+
+@media (min-width: 768px) {
+  .photo-1 {
+    left: 0;
+  }
+
+  .photo-1.inverted {
+    left: auto;
+    right: 0;
+  }
+
+  .photo-2 {
+    top: -100px;
+    left: 7.5vw;
+  }
+
+  .photo-2.inverted {
+    left: auto;
+    right: 7.5vw;
+  }
+
+  .photo-3 {
+    top: -150px;
+    left: 25px;
+  }
+
+  .photo-3.inverted {
+    left: auto;
+    right: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .photo-1 {
+    left: 0;
+  }
+
+  .photo-1.inverted {
+    left: auto;
+    right: 0;
+  }
+
+  .photo-2 {
+    top: -100px;
+    left: 7.5vw;
+  }
+
+  .photo-2.inverted {
+    left: auto;
+    right: 7.5vw;
+  }
+
+  .photo-3 {
+    top: -150px;
+    left: 4vw;
+  }
+
+  .photo-3.inverted {
+    left: auto;
+    right: 4vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .photo-2 {
+    top: -150px;
+    left: 100px;
+  }
+
+  .photo-2.inverted {
+    left: auto;
+    right: 100px;
+  }
+
+  .photo-3 {
+    top: -225px;
+    left: 40px;
+  }
+
+  .photo-3.inverted {
+    left: auto;
+    right: 40px;
+  }
+}

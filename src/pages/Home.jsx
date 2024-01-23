@@ -31,6 +31,7 @@ export default function HomePage() {
             "rubicon-dog_thumbnail.png",
             "investment-calculator_thumbnail.png",
           ]}
+          photoLayout="1"
         />
         <TextContent
           header="About Me"
@@ -54,13 +55,15 @@ export default function HomePage() {
           </div>
         </TextContent>
       </ContentSection>
-      <ContentSection colorStyle="dark">
+      <ContentSection colorStyle="dark" inverted>
         <PhotoGallery
           photos={[
             "task-tracker-kanban_thumbnail.png",
             "rubicon-dog_thumbnail.png",
             "investment-calculator_thumbnail.png",
           ]}
+          photoLayout="1"
+          inverted
         />
         <TextContent
           header="My Work"
